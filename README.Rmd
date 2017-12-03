@@ -14,10 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r}
-library(powers)
-```
-
 
 # powers
 
@@ -28,7 +24,9 @@ It provides a few functions for dealing with powers.
 
 ```{r}
 # install.packages("devtools")
-devtools::install_github("rainerlempert/STAT547-hw09-Lempert_Rainer")
+devtools::install_github("rainerlempert/Lempert_Rainer_hw09")
+
+library(powers)
 
 #>   Use `force = TRUE` to force installation
 ```

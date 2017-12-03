@@ -1,8 +1,4 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-``` r
-library(powers)
-```
-
 powers
 ======
 
@@ -14,10 +10,11 @@ Installation
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("rainerlempert/STAT547-hw09-Lempert_Rainer")
-#> Downloading GitHub repo rainerlempert/STAT547-hw09-Lempert_Rainer@master
-#> from URL https://api.github.com/repos/rainerlempert/STAT547-hw09-Lempert_Rainer/zipball/master
-#> Installation failed: Not Found (404)
+devtools::install_github("rainerlempert/Lempert_Rainer_hw09")
+#> Skipping install of 'powers' from a github remote, the SHA1 (4226fd25) has not changed since last install.
+#>   Use `force = TRUE` to force installation
+
+library(powers)
 
 #>   Use `force = TRUE` to force installation
 ```
