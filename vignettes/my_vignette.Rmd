@@ -1,0 +1,45 @@
+---
+title: "Vignette Title"
+author: "Vignette Author"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r}
+library(powers)
+```
+
+## Usage
+
+Look at what my functions can do!
+```{r}
+square(1:10)
+cube(1:10)
+pow(1:10,3)
+boxcox(4,3)
+```
+
+They work with the `apply` family as well!
+```{r}
+my_list <- list(1:10, 0.5, 26)
+
+lapply(my_list, square)
+lapply(my_list, boxcox, lambda=3)
+```
+
+## Errors
+
+If you put a string into any of the functions the spit out an error message!
+```{r}
+cube("1:10")
+pow(1:10,"why one would put a character here is beyond me")
+```
+
+In addition, if your value is less than or equal to zero for `boxcox` you also get an error message!
+```{r}
+boxcox(-500000,3)
+```
+

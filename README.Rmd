@@ -1,0 +1,54 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+```{r}
+library(powers)
+```
+
+
+# powers
+
+This package is for a homework assignment. It is not meant to be serious!  
+It provides a few functions for dealing with powers.
+
+## Installation
+
+```{r}
+# install.packages("devtools")
+devtools::install_github("rainerlempert/STAT547-hw09-Lempert_Rainer")
+
+#>   Use `force = TRUE` to force installation
+```
+
+
+## Functions
+
+Here are the functions included in the package:
+
+- `square` - squares a vector, logical, or number  
+- `cube` - cubes a vector, logical, or number  
+- `pow` - takes the power of a vector, logical, or number  
+- `boxcox` - takes the boxcox transformation of vector, logical, or number, given a lambda 
+
+
+## Examples
+
+Look to the vignette for more thorough examples what this can do
+
+```{r}
+square(3)
+boxcox(1:10, 4)
+```
